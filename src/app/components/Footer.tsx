@@ -42,6 +42,11 @@ export default function Footer() {
             </span>
             <span>Powered by {site.poweredBy}</span>
           </div>
+          <p className="footer__note">
+            For people aged 18+. AI-generated assessments are provided for general informational and personal reflection
+            purposes and may be inaccurate. If you are experiencing abuse, threats, or immediate danger, seek assistance from
+            qualified professionals or appropriate emergency services.
+          </p>
         </div>
       </div>
     </footer>

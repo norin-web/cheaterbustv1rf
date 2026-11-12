@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, ChevronDown, ChevronRight, Focus, History, ImagePlus, Lightbulb, Mail, ScanLine, Share2, Sparkles } from "lucide-react";
 import { analyze, app, faq, features, flow, plan, results, site, steps } from "../content/site";
+import { Link } from "react-router";
 import { img } from "../utils/img";
 import Btn from "../components/Btn";
 import Reveal from "../components/Reveal";
@@ -210,12 +211,13 @@ function StartAndData() {
       <section className="card duo">
         <h2 className="h-duo">Your chat, used only for the scan</h2>
         <p className="body-m">
-          To generate results, the content you provide, including text and images, is securely sent to the app’s AI processing
-          provider (OpenAI). The data is used solely to produce AI-generated responses.
+          The images you select are sent to third-party AI services only to generate the assessment. Your results and scanning
+          history stay on your iPhone, not on a developer backend, and deleting a scan removes it from the app.
         </p>
         <p className="body-m">
-          The app asks before the first scan, and uses Camera and Photos access only to upload pictures of your chats for analysis.
+          Screenshots are picked with Apple’s photo picker, so the app sees only the images you choose. No account, no ads.
         </p>
+        <Link to="/privacy" className="link duo__link">Read the Privacy Policy</Link>
       </section>
     </div>
   );
@@ -261,7 +263,7 @@ function PlanAndContact() {
         <span className="badge" aria-hidden="true"><ScanLine /></span>
         <p className="price__n">{app.weekly}</p>
         <h2 className="h-price">per week after a {app.trialDays}‑day free trial</h2>
-        <p className="body-m muted">Billed through your Apple ID. Cancel anytime in Settings.</p>
+        <p className="body-m muted">Billed through your Apple Account. Cancel anytime in Settings.</p>
         <ul className="ticks">
           {plan.map((p) => (
             <li key={p}><Check aria-hidden="true" /> {p}</li>

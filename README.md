@@ -19,8 +19,8 @@ In the repo: Settings → Pages → Source = **GitHub Actions**.
 
 ### `base` and the custom domain — read before attaching a domain
 
-- Now: no domain, the site lives at `https://norin-web.github.io/cheaterbustv1rf/` → `base: "/cheaterbustv1rf/"` in `vite.config.ts`.
-- When a domain is saved in Pages settings, switch `base` to `"/"` **and** add `public/CNAME` with the domain in the same commit — otherwise every asset 404s and the page is blank.
+- Now: custom domain `cheaterbustr.casa` (`public/CNAME`) → `base: "/"` in `vite.config.ts`.
+- If the domain is ever removed, switch `base` back to `"/cheaterbustv1rf/"` and delete `public/CNAME` in the same commit — otherwise every asset 404s and the page is blank.
 
 ## Where things live
 

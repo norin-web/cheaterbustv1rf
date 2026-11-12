@@ -68,11 +68,12 @@ export const plan = [
 
 export const faq = [
   { q: "How do I scan a chat?", a: "Open the app, tap the red scan button and upload a screenshot of the chat from Photos or take a picture of it. The photo must be of good quality, not blurry, and taken straight." },
-  { q: "What does the result mean?", a: "Each chat gets one of three labels (Healthy Relationships, There is room for improvement or Abusive Relationships) with an explanation and an AI Advice. It’s an AI-generated insight, not a professional assessment." },
-  { q: "Where is my chat sent?", a: "To generate results, the content you provide, including text and images, is securely sent to our AI processing provider (OpenAI). The data is used solely to produce AI-generated responses. The app asks for your consent before the first scan." },
-  { q: "Why does the app need Camera or Photos access?", a: "Only to upload photos of your chats for analysis. If you declined, you can allow access later in your iPhone’s Settings → Privacy." },
+  { q: "What does the result mean?", a: "Each chat gets one of three labels (Healthy Relationships, There is room for improvement or Abusive Relationships) with an explanation and an AI Advice. It’s an AI-generated insight for general information and personal reflection, not a definitive evaluation of anyone." },
+  { q: "Where is my chat sent?", a: "The images you select are sent to third-party AI services (such as fal.ai, OpenRouter or Google AI services) to generate the assessment. Results and your scanning history are stored locally on your iPhone, not on a developer backend. Details are in the Privacy Policy." },
+  { q: "Does the app see my whole photo library?", a: "No. Screenshots are picked with Apple’s photo picker, so the app gets only the images you select. The camera is used only when you take a picture of a chat. You can manage permissions in your iPhone’s Settings." },
+  { q: "Who can use the app?", a: "AI Chat Scanner is intended for people aged 18 and older." },
   { q: "How much does it cost?", a: `The subscription starts with a ${app.trialDays}‑day free trial, then ${app.weekly} per week. The price is shown in the app before you subscribe and may vary by country.` },
-  { q: "How do I cancel my subscription?", a: "Subscriptions are billed through your Apple ID. Cancel them in your iPhone’s Settings → your name → Subscriptions at least 24 hours before the renewal date. Deleting the app doesn’t cancel an active subscription." },
+  { q: "How do I cancel my subscription?", a: "Subscriptions are billed through your Apple Account. Cancel them in your iPhone’s Settings → your name → Subscriptions at least 24 hours before the renewal date. Deleting the app doesn’t cancel an active subscription." },
   { q: "How do I restore a purchase?", a: "Tap Restore at the top of the subscription screen and use the same Apple ID the purchase was made with. Refunds are handled by Apple." },
-  { q: "Can I delete a scan?", a: "Yes. Swipe a chat in the scanning history or open its result and choose Delete. You can’t undo this action." },
+  { q: "Can I delete a scan?", a: "Yes. Swipe a chat in the scanning history or open its result and choose Delete; its image and result are removed from the app. You can’t undo this action. Deleting locally doesn’t remove data already processed by the AI providers." },
 ];
